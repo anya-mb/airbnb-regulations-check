@@ -20,8 +20,8 @@ HEADERS = {
 
 QUERYSTRING = {
     "location": "Vancouver, BC, Canada",
-    "checkin": "2024-08-12",
-    "checkout": "2024-08-13",
+    "checkin": "2024-07-01", # change for different dump
+    "checkout": "2024-07-04", # change for different dump
     "adults": "1",
     "children": "0",
     "infants": "0",
@@ -30,7 +30,7 @@ QUERYSTRING = {
     "currency": "CAD"
 }
 
-DATA_FILENAME = 'data/airbnb_results.csv'
+DATA_FILENAME = f'data/airbnb_results_{QUERYSTRING["checkin"]}_{QUERYSTRING["checkout"]}.csv'
 
 
 # Function to make the API request
